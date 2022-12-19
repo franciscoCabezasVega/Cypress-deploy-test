@@ -1,5 +1,7 @@
 # CYPRESS DEPLOY TEST
- 
+
+[![Default Project](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/am6186/test-cypress-deploy&style=social&logo=cypress)](https://cloud.cypress.io/projects/am6186/runs)
+
 This project aims to show the use of the cypress tool, as a test automation tool where you can easily run the tests corresponding to the system with the various use cases required.
 
 ### Optional installation
