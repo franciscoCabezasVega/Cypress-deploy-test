@@ -88,7 +88,7 @@ describe('Make the payment of the requested products without filling in the requ
 
 describe('Add products to cart with an unregistered user', () => {
 
-  it('add one item from each category', () => {
+  it.skip('add one item from each category', () => {
     cy.visit('/')
     cy.addProduct()
     cy.get('#cartur').click()
