@@ -8,6 +8,7 @@ jobs:
       matrix:
         containers: [1, 2]
     steps:
+      - run: npm install
       - name: Go install
         uses: actions/setup-go@v2
         with:
