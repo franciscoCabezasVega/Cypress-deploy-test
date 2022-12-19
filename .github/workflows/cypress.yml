@@ -10,21 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - uses: Install node
-        uses: actions/setup-node@v3
-      with:
-        node-version: 16
-      - run: npm install
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           record: true
           parallel: true
-          browser: electron
+          browser: chrome
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # overwrite commit message sent to Cypress Cloud
-          COMMIT_INFO_MESSAGE: ${{github.event.pull_request.title}}
-          # re-enable PR comment bot
-          COMMIT_INFO_SHA: ${{github.event.pull_request.head.sha}}
