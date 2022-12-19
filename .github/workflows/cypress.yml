@@ -15,6 +15,15 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+      - name: Go install
+        uses: actions/setup-go@v2
+        with:
+          go-version: "^1.16"
+      - name: Lockgit
+        run: |
+          go install github.com/jswidler/lockgit@latest
+          lockgit set-key ${{ secrets.LOCKGIT_SECRET }} --force
+          lockgit open
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
