@@ -8,15 +8,6 @@ jobs:
       matrix:
         containers: [1, 2]
     steps:
-      - name: Go install
-        uses: actions/setup-go@v2
-        with:
-          go-version: "^1.16"
-      - name: Lockgit
-        run: |
-          go install github.com/jswidler/lockgit@latest
-          lockgit set-key ${{ secrets.LOCKGIT_SECRET }} --force
-          lockgit open
       - name: Checkout
         uses: actions/checkout@v3
       - uses: Install node
