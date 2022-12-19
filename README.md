@@ -1,10 +1,6 @@
-# PRUEBA-TECNICA-TALANA
+# CYPRESS DEPLOY TEST
  
 This project aims to show the use of the cypress tool, as a test automation tool where you can easily run the tests corresponding to the system with the various use cases required.
-
-## Installation
-
-- Install auth-api-tutorial-cypress with npm (you can install nvm and configure npm version 8.15.0).
 
 ### Optional installation
 
