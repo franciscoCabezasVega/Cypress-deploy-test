@@ -34,16 +34,18 @@ or open it with:
 Clone the project
 
 ```bash
-  git clone ...
+  git clone https://github.com/franciscoCabezasVega/Cypress-deploy-test.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd ...
+  cd Cypress-deploy-test
 ```
 
 Install dependencies
+
+- Install proyect with npm (you can install nvm and configure npm version 8.15.0).
 
 ```bash
   npm install
